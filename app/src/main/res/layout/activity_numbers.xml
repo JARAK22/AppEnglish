@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#E8F5E9"
     android:padding="16dp"
-    tools:context=".NumbersActivity">
+    tools:context=".Numbers">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:id="@+id/textTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Numbers"
+            android:text="@string/numbers"
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="#4CAF50"
@@ -37,7 +37,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/cero"
-                android:contentDescription="cero" />
+                android:contentDescription="@string/zero" />
 
             <TextView
                 android:id="@+id/textCero"
@@ -54,8 +54,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play3"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarCero"/>
         </LinearLayout>
 
         <LinearLayout
@@ -72,7 +72,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/uno"
-                android:contentDescription="uno" />
+                android:contentDescription="@string/one" />
 
             <TextView
                 android:id="@+id/textUno"
@@ -89,8 +89,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play3"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarUno"/>
         </LinearLayout>
 
         <LinearLayout
@@ -107,7 +107,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/dos"
-                android:contentDescription="dos" />
+                android:contentDescription="@string/two" />
 
             <TextView
                 android:id="@+id/textDos"
@@ -124,8 +124,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play3"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarDos"/>
         </LinearLayout>
 
         <LinearLayout
@@ -142,7 +142,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/tres"
-                android:contentDescription="tres" />
+                android:contentDescription="@string/three" />
 
             <TextView
                 android:id="@+id/textTres"
@@ -159,8 +159,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play3"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarTres"/>
         </LinearLayout>
 
         <LinearLayout
@@ -177,7 +177,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/cuatro"
-                android:contentDescription="cuatro" />
+                android:contentDescription="@string/four" />
 
             <TextView
                 android:id="@+id/textCuatro"
@@ -194,8 +194,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play3"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarCuatro"/>
         </LinearLayout>
 
         <LinearLayout
@@ -212,7 +212,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/cinco"
-                android:contentDescription="cinco" />
+                android:contentDescription="@string/five" />
 
             <TextView
                 android:id="@+id/textCinco"
@@ -229,8 +229,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play3"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarCinco"/>
         </LinearLayout>
 
         <LinearLayout
@@ -247,7 +247,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/seis"
-                android:contentDescription="seis" />
+                android:contentDescription="@string/six" />
 
             <TextView
                 android:id="@+id/textSeis"
@@ -264,8 +264,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play3"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarSeis"/>
         </LinearLayout>
 
         <LinearLayout
@@ -282,7 +282,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/siete"
-                android:contentDescription="siete" />
+                android:contentDescription="@string/seven" />
 
             <TextView
                 android:id="@+id/textSiete"
@@ -299,8 +299,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play3"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarSiete"/>
         </LinearLayout>
 
         <LinearLayout
@@ -317,7 +317,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/ocho"
-                android:contentDescription="ocho" />
+                android:contentDescription="@string/eight" />
 
             <TextView
                 android:id="@+id/textOcho"
@@ -334,8 +334,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play3"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarOcho"/>
         </LinearLayout>
 
         <LinearLayout
@@ -352,7 +352,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/nueve"
-                android:contentDescription="nueve" />
+                android:contentDescription="@string/nine" />
 
             <TextView
                 android:id="@+id/textNueve"
@@ -369,8 +369,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play3"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarNueve"/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

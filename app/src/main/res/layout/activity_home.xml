@@ -5,11 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_light"
-    tools:context=".HomeActivity">
+    tools:context=".Home">
 
-    <!-- Título principal -->
-
-    <!-- Contenedor general para los botones -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -35,14 +32,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Fila 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginBottom="16dp">
 
-            <!-- Botón Animals -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/btnAnimals"
                 android:layout_width="150dp"
@@ -65,7 +60,8 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:src="@drawable/animales"
-                        android:contentDescription="Animals"/>
+                        android:contentDescription="@string/animales"
+                        android:onClick="animales"/>
 
                     <TextView
                         android:text="@string/animales"
@@ -78,7 +74,6 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Botón Colors -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/btnColors"
                 android:layout_width="150dp"
@@ -101,7 +96,8 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:src="@drawable/colores"
-                        android:contentDescription="Colors"/>
+                        android:contentDescription="@string/colores"
+                        android:onClick="colors"/>
 
                     <TextView
                         android:text="@string/colores"
@@ -115,13 +111,11 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
-        <!-- Fila 2 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
 
-            <!-- Botón Numbers -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/btnNumbers"
                 android:layout_width="150dp"
@@ -144,7 +138,8 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:src="@drawable/numeros"
-                        android:contentDescription="Numbers"/>
+                        android:contentDescription="@string/numeros"
+                        android:onClick="numbers"/>
 
                     <TextView
                         android:text="@string/numeros"
@@ -157,7 +152,6 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Botón Fruits -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/btnFruits"
                 android:layout_width="150dp"
@@ -180,7 +174,8 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:src="@drawable/frutas"
-                        android:contentDescription="Fruits"/>
+                        android:contentDescription="@string/frutas"
+                        android:onClick="fruits"/>
 
                     <TextView
                         android:text="@string/frutas"

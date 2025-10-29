@@ -1,6 +1,8 @@
 package com.jarak.myapplicationjarak;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,15 +12,37 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Colors extends AppCompatActivity {
 
+    MediaPlayer sonido;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_colors);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+    }
+
+
+    public void sonarBlue(View view){
+        sonido = MediaPlayer.create(Colors.this, R.raw.blue);
+        sonido.start();
+    }
+
+    public void sonarGreen(View view){
+        sonido = MediaPlayer.create(Colors.this, R.raw.green);
+        sonido.start();
+    }
+
+    public void sonarOrange(View view){
+        sonido = MediaPlayer.create(Colors.this, R.raw.orange);
+        sonido.start();
+    }
+
+    public void sonarRed(View view){
+        sonido = MediaPlayer.create(Colors.this, R.raw.blue);
+        sonido.start();
+    }
+
+    public void sonarYellow(View view){
+        sonido = MediaPlayer.create(Colors.this, R.raw.yellow);
+        sonido.start();
     }
 }

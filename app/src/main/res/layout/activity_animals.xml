@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#E3F2FD"
     android:padding="16dp"
-    tools:context=".AnimalsActivity">
+    tools:context=".Animals">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:id="@+id/textTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Animals"
+            android:text="@string/animals"
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="#2196F3"
@@ -38,13 +38,13 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/canguro"
-                android:contentDescription="Dog" />
+                android:contentDescription="@string/canguro" />
 
             <TextView
                 android:id="@+id/textCanguro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/canguro"
+                android:text="@string/kanguro"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:textColor="#333"
@@ -55,8 +55,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/video"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarKanguro"/>
         </LinearLayout>
 
         <LinearLayout
@@ -73,7 +73,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/koala"
-                android:contentDescription="koala" />
+                android:contentDescription="@string/koala" />
 
             <TextView
                 android:id="@+id/textKoala"
@@ -90,8 +90,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/video"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarKoala"/>
         </LinearLayout>
 
         <LinearLayout
@@ -108,7 +108,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/mono"
-                android:contentDescription="mono" />
+                android:contentDescription="@string/mono" />
 
             <TextView
                 android:id="@+id/textMono"
@@ -125,44 +125,44 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/video"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarMono"/>
         </LinearLayout>
 
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/rounded_card"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/imgPanda"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/panda"
-            android:contentDescription="panda" />
-
-        <TextView
-            android:id="@+id/textPanda"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/panda"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#333"
-            android:layout_marginTop="8dp" />
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
 
-        <ImageButton
-            android:id="@+id/btnSoundPanda"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@drawable/video"
-            android:src="@drawable/ic_sound"
-            android:contentDescription="Play sound" />
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/imgPanda"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/panda"
+                android:contentDescription="@string/panda" />
+
+            <TextView
+                android:id="@+id/textPanda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panda"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundPanda"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/video"
+                android:contentDescription="@string/audio"
+                android:onClick="sonarPanda"/>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -178,7 +178,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/serpiente"
-                android:contentDescription="serpiente" />
+                android:contentDescription="@string/serpiente" />
 
             <TextView
                 android:id="@+id/textSerpiente"
@@ -195,8 +195,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/video"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarSerpiente"/>
         </LinearLayout>
         <!-- Copiar y cambiar para: Cat, Lion, Elephant, Bird -->
 

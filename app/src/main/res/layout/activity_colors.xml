@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#F3E5F5"
     android:padding="16dp"
-    tools:context=".ColorsActivity">
+    tools:context=".Colors">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,13 +17,12 @@
             android:id="@+id/textTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Colors"
+            android:text="@string/colors"
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="#9C27B0"
             android:layout_marginBottom="16dp" />
 
-        <!-- Ejemplo de Color -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,8 +44,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play2"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarBlue"/>
         </LinearLayout>
 
         <LinearLayout
@@ -70,8 +69,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play2"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarGreen"/>
         </LinearLayout>
 
         <LinearLayout
@@ -95,8 +94,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play2"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarOrange"/>
         </LinearLayout>
 
         <LinearLayout
@@ -120,8 +119,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play2"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio" />
         </LinearLayout>
 
         <LinearLayout
@@ -145,8 +143,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/play2"
-                android:src="@drawable/ic_sound"
-                android:contentDescription="Play sound" />
+                android:contentDescription="@string/audio"
+                android:onClick="sonarRed"/>
         </LinearLayout>
 
     </LinearLayout>

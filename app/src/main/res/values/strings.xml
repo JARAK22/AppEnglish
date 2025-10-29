@@ -29,5 +29,9 @@
     <string name="seven">Seven</string>
     <string name="eight">Eight</string>
     <string name="nine">Nine</string>
-
+    <string name="audio">Audio</string>
+    <string name="numbers">Numbers</string>
+    <string name="animals">Animals</string>
+    <string name="fruits">Fruits</string>
+    <string name="colors">Colors</string>
 </resources>
