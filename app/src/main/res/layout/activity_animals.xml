@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:padding="16dp"
+    tools:context=".AnimalsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animals"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Ejemplo de Animal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgCanguro"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/canguro"
+                android:contentDescription="Dog" />
+
+            <TextView
+                android:id="@+id/textCanguro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/canguro"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundCanguro"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/video"
+                android:src="@drawable/ic_sound"
+                android:contentDescription="Play sound" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgKoala"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/koala"
+                android:contentDescription="koala" />
+
+            <TextView
+                android:id="@+id/textKoala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/koala"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundKoala"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/video"
+                android:src="@drawable/ic_sound"
+                android:contentDescription="Play sound" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgMono"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/mono"
+                android:contentDescription="mono" />
+
+            <TextView
+                android:id="@+id/textMono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mono"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundMono"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/video"
+                android:src="@drawable/ic_sound"
+                android:contentDescription="Play sound" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_card"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgPanda"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/panda"
+            android:contentDescription="panda" />
+
+        <TextView
+            android:id="@+id/textPanda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/panda"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginTop="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnSoundPanda"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/video"
+            android:src="@drawable/ic_sound"
+            android:contentDescription="Play sound" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgSerpiente"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/serpiente"
+                android:contentDescription="serpiente" />
+
+            <TextView
+                android:id="@+id/textSerpiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serpiente"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundSepiente"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/video"
+                android:src="@drawable/ic_sound"
+                android:contentDescription="Play sound" />
+        </LinearLayout>
+        <!-- Copiar y cambiar para: Cat, Lion, Elephant, Bird -->
+
+    </LinearLayout>
+</ScrollView>
