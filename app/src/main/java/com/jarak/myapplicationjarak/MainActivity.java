@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     */
 
     public void iniciar(View view){
-        Intent MoverActivity = new Intent(MainActivity.this, Home.class);
+        Intent MoverActivity = new Intent(MainActivity.this, MenuAprenderJugar.class);
         startActivity(MoverActivity);
     }
 }

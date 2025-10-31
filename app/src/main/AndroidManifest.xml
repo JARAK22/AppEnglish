@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationJarak">
         <activity
+            android:name=".Jugar"
+            android:exported="false" />
+        <activity
+            android:name=".MenuAprenderJugar"
+            android:exported="false" />
+        <activity
             android:name=".Numbers"
             android:exported="false" />
         <activity

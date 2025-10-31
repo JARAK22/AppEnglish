@@ -34,4 +34,6 @@
     <string name="animals">Animals</string>
     <string name="fruits">Fruits</string>
     <string name="colors">Colors</string>
+    <string name="aprender">Aprender</string>
+    <string name="jugar">Jugar</string>
 </resources>
