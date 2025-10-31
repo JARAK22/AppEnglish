@@ -36,4 +36,5 @@
     <string name="colors">Colors</string>
     <string name="aprender">Aprender</string>
     <string name="jugar">Jugar</string>
+    <string name="pregunta">Preguntas</string>
 </resources>
